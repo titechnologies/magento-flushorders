@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+ * Ti Flushdashboard
+ *
+ * @category    Ti
+ * @package     Ti_Flushdashboard
+ * @copyright   Copyright (c) 2012 Ti Technologies (http://www.titechnologies.in)
+ * @link        http://www.titechnologies.in
+-->
+<config>
+    <modules>
+        <Ti_Flushdashboard>
+            <version>1.0.1</version>
+        </Ti_Flushdashboard>
+    </modules>
+    <admin>
+        <routers>
+            <flushdashboard>
+                <use>admin</use>
+                <args>
+                    <module>Ti_Flushdashboard</module>
+                    <frontName>flushdashboard</frontName>
+                </args>
+            </flushdashboard>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <menu>
+            <system translate="title" module="adminhtml">
+            <children>
+                <flushdashboard translate="title">
+                    <title>Flush Dashboard</title>
+                    <action>flushdashboard/adminhtml_flushdashboard</action>
+                    <sort_order>120</sort_order>
+                </flushdashboard>
+            </children>
+            </system>
+        </menu>
+
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <flushdashboard translate="title">
+                                    <title>Flush Dashboard</title>
+                                    <action>resetorders/adminhtml_resetorder</action>
+                                    <sort_order>120</sort_order>
+                                </flushdashboard>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+
+        <layout>
+            <updates>
+                <flushdashboard>
+                    <file>flushdashboard.xml</file>
+                </flushdashboard>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

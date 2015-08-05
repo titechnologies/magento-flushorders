@@ -1,0 +1,53 @@
+<?php
+/**
+ * Ti Flushdashboard
+ *
+ * @category    Ti
+ * @package     Ti_Flushdashboard
+ * @copyright   Copyright (c) 2012 Ti Technologies (http://www.titechnologies.in)
+ * @link        http://www.titechnologies.in
+ */
+?>
+<div class="content-header">
+    <table cellspacing="0" class="grid-header">
+        <tr>
+            <td><h3><?=$this->__('Flush Dashboard Data')?></h3></td>
+            <td class="a-right">
+
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="entry-edit">
+<div class="leftlabel" style="border:1px solid #CCCCCC; padding:10px;">
+<h6><?php echo Mage::helper('core')->__('The following datas will be flushed from dashboard.') ?></h6>
+<br />
+<?php echo '<p>'. Mage::helper('core')->__('Clear Order History').'</p>';?>
+<?php echo '<p>'. Mage::helper('core')->__('Lifetime Sales').'</p>';?>
+<?php echo '<p>'. Mage::helper('core')->__('Average Orders').'</p>';?>
+<?php echo '<p>'. Mage::helper('core')->__('Most Viewed Products').'</p>';?>
+<?php echo '<p>'. Mage::helper('core')->__('Top 5 Search Terms').'</p>';?>
+<?php echo '<p>'. Mage::helper('core')->__('Last 5 Search Terms').'</p>';?>
+
+<br />
+<button onclick="return ConfirmFunction();" class="scalable save" type="button"><span><?php echo Mage::helper('core')->__('Flush Dashboard Data') ?></span></button>
+<form action="<?php echo $this->geturl('*/*/add'); ?>" id="clearorder" name="clearorder" method="post">
+<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+</form>
+</div>
+</div>
+
+<script>
+function ConfirmFunction()
+{
+    if(confirm("Are you sure that you want to Flush Dashboard Data?")) {
+    clearorder.submit();
+    return true;
+    }
+    else
+    return false;
+}
+</script>
+<script type="text/javascript">
+    var editForm = new varienForm('clearorder');
+</script>

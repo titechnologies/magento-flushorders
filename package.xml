@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ti_Flushdashboard</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Flushdashboard for magento</summary>
+    <description>Flushdashboard for magento</description>
+    <notes>Flushdashboard for magento</notes>
+    <authors><author><name>Ti</name><user>titech</user><email>info@titechnologies.in</email></author></authors>
+    <date>2015-01-19</date>
+    <time>10:41:37</time>
+    <contents><target name="magecommunity"><dir name="Ti"><dir name="Flushdashboard"><dir name="controllers"><dir name="Adminhtml"><file name="FlushdashboardController.php" hash="f512e2ef61ad2f92bb37abd17dba46fa"/></dir></dir><dir name="etc"><file name="config.xml" hash="06a5b5069deed47bc9962b24764b3a2e"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ti_Flushdashboard.xml" hash="3f63f591aeeaf35b2831d22a806bd40a"/></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><file name="flushdashboard.phtml" hash="da02ee1343480279650fdd2a8798d9de"/></dir><dir name="layout"><file name="flushdashboard.xml" hash="4c39994862437fb4e5112a2b39de1a31"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

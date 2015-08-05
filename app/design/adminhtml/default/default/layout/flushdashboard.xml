@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+ * Ti Flushdashboard
+ *
+ * @category    Ti
+ * @package     Ti_Flushdashboard
+ * @copyright   Copyright (c) 2012 Ti Technologies (http://www.titechnologies.in)
+ * @link        http://www.titechnologies.in
+-->
+<layout version="0.1.0">
+<flushdashboard_adminhtml_flushdashboard_index>
+        <reference name="content">
+            <block type="adminhtml/template" name="flushdashboard" template="flushdashboard.phtml"/>
+        </reference>
+   </flushdashboard_adminhtml_flushdashboard_index>
+</layout>

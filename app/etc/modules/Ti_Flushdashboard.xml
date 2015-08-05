@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Ti_Flushdashboard>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Ti_Flushdashboard>
+    </modules>
+</config>
